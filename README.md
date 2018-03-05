@@ -1,1 +1,1 @@
-# This repository contains the managemnet systems programmed in C#. 
+# This repository contains the web apps programmed in C#. 
