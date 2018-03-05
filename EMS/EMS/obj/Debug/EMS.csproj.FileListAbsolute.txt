@@ -1,0 +1,7 @@
+E:\C#\EMS\EMS\bin\EMS.dll.config
+E:\C#\EMS\EMS\bin\EMS.dll
+E:\C#\EMS\EMS\bin\EMS.pdb
+E:\C#\EMS\EMS\bin\MySql.Data.dll
+E:\C#\EMS\EMS\obj\Debug\EMS.csprojResolveAssemblyReference.cache
+E:\C#\EMS\EMS\obj\Debug\EMS.dll
+E:\C#\EMS\EMS\obj\Debug\EMS.pdb
