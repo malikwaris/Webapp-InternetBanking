@@ -1,0 +1,6 @@
+E:\TaxCalculation\TaxCalculation\bin\Debug\TaxCalculation.exe.config
+E:\TaxCalculation\TaxCalculation\obj\Debug\TaxCalculation.csprojResolveAssemblyReference.cache
+E:\TaxCalculation\TaxCalculation\bin\Debug\TaxCalculation.exe
+E:\TaxCalculation\TaxCalculation\bin\Debug\TaxCalculation.pdb
+E:\TaxCalculation\TaxCalculation\obj\Debug\TaxCalculation.exe
+E:\TaxCalculation\TaxCalculation\obj\Debug\TaxCalculation.pdb
