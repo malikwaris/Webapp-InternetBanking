@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BloodBank
+{
+    class Donor
+    {
+
+     public   String donorName {get;set;}
+     public String donorNIC { get; set; }
+        public String donorRhFactor { get; set; }
+        public String donorBloodGroup { get; set; }
+        public String donorAddress { get; set; }
+        public String donorPhone { get; set; }
+
+        
+
+
+
+
+    }
+}
