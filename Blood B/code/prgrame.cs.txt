@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BloodBank
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string name, bloodGroup;
+
+            Console.WriteLine("1- Add new donor");
+            Console.WriteLine("2- Search by name");
+            Console.WriteLine("3- Search by BloodGroup");
+            Console.WriteLine("4- View all donors");
+            Console.WriteLine("5- View all Blood Types" + Environment.NewLine);
+
+            while (true)
+            {
+
+                String options = Console.ReadLine();
+
+
+                if (options.Equals("1"))
+                {
+
+                    //add donor
+
+                    donorManager.addDonor();
+                    break;
+
+                }
+
+                else if (options.Equals("2"))
+                {
+
+                    //search donor by name
+
+                    Console.WriteLine("Enter name of donor to search");
+                    name = Console.ReadLine();
+
+                    donorManager.searchDonorName(name);
+                    break;
+
+                }
+                else if (options.Equals("3"))
+                {
+
+                    // match blood group of donor
+
+                    Console.WriteLine("Enter bloodGroup of donor to search");
+                    bloodGroup = Console.ReadLine();
+
+
+                    donorManager.searchDonorByBloodGroup(bloodGroup);
+                    break;
+                }
+                else if (options.Equals("4"))
+                {
+
+                    // display all 
+
+                    donorManager.viewDonor();
+                    break;
+
+                }
+                else if (options.Equals("5"))
+                {
+
+
+                    donorManager.displayNumberOfDifferentBloodTypes();
+                    break;
+
+               
+
+                Console.ReadLine();
+
+                }
+                
+            }
+            Console.ReadLine();
+        }
+    }
+}

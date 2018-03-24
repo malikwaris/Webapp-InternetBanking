@@ -1,0 +1,154 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BloodBank
+{
+    class donorManager
+    {
+
+       public static string confirm;
+        public static int A,B,O;
+       public static List<Donor> donorList = new List<Donor>();
+
+
+        public static void addDonor() {
+
+            Console.WriteLine("Enter Donor Name");
+            Donor obj = new Donor();
+
+            obj.donorName = Console.ReadLine();
+
+            Console.WriteLine("Enter Donor NIC ");
+
+            obj.donorNIC = Console.ReadLine();
+
+            Console.WriteLine("Enter Donor's Blood Group");
+
+            obj.donorBloodGroup = Console.ReadLine();
+
+            Console.WriteLine("Enter Donor's RH factor");
+
+            obj.donorRhFactor = Console.ReadLine();
+
+            Console.WriteLine("Enter Donor's phone number");
+
+            obj.donorPhone = Console.ReadLine();
+
+            Console.WriteLine("Would you like to save the donor into the list? yes/no");
+            confirm = Console.ReadLine();
+
+                
+
+            if (confirm.Equals("yes"))
+            {
+                donorList.Add(obj);
+
+                Console.WriteLine("Donor succesfully added into the list....");
+            }
+                 
+        
+        
+        }
+
+        // view donor info
+
+        public static void viewDonor()
+        { 
+        
+        foreach(Donor don in donorList){
+
+            Console.WriteLine("Name: " + don.donorName);
+            Console.WriteLine("Phone:  " + don.donorPhone);
+            Console.WriteLine("NIC: " + don.donorNIC);
+            Console.WriteLine("Blood group:" + don.donorBloodGroup);
+            Console.WriteLine("Blood Rf value: "  +  don.donorRhFactor);
+            Console.WriteLine("Address: " + don.donorAddress);
+
+        
+        }
+        
+        
+        }
+
+        //search donor fucntion
+
+        public static void searchDonorName(String name)
+        { 
+        
+        foreach(Donor donor in donorList){
+        
+        //
+        
+            if (donor.donorName.Equals(name)){
+
+                viewDonor(); //view entire donor info...
+            
+            }
+        
+        }
+        
+        }
+
+
+        public static void searchDonorByBloodGroup(String donorBloodGroup)
+        {
+
+
+            foreach (Donor donor in donorList)
+            {
+
+
+
+                if (donor.donorBloodGroup.Equals(donorBloodGroup))
+                {
+
+                    viewDonor(); //view entire donor info...
+
+                }
+
+            }
+
+
+        }
+
+        public static void displayAllBloodTypes() { 
+        
+            foreach(Donor d in donorList){
+
+                // ....
+            
+            }
+
+        
+        
+        }
+
+
+        public static void displayNumberOfDifferentBloodTypes() { 
+        
+        foreach(Donor d in donorList){
+        
+        if (d.donorBloodGroup.Equals("A")){
+            A++;   
+
+        }else if (d.donorBloodGroup.Equals("B")){
+
+            B++;
+        } else if (d.donorBloodGroup.Equals("O")){
+
+            O++;
+        }
+
+        Console.WriteLine("A's are: " + A);
+        Console.WriteLine("B's are: " + B);
+        Console.WriteLine("O's are: "  + O);
+        }
+        
+        }
+
+
+    }
+}

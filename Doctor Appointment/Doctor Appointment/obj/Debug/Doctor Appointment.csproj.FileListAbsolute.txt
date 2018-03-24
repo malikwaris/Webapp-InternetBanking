@@ -1,0 +1,7 @@
+E:\C#\Doctor Appointment\Doctor Appointment\bin\Doctor Appointment.dll.config
+E:\C#\Doctor Appointment\Doctor Appointment\bin\Doctor Appointment.dll
+E:\C#\Doctor Appointment\Doctor Appointment\bin\Doctor Appointment.pdb
+E:\C#\Doctor Appointment\Doctor Appointment\bin\MySql.Data.dll
+E:\C#\Doctor Appointment\Doctor Appointment\obj\Debug\Doctor Appointment.csprojResolveAssemblyReference.cache
+E:\C#\Doctor Appointment\Doctor Appointment\obj\Debug\Doctor Appointment.dll
+E:\C#\Doctor Appointment\Doctor Appointment\obj\Debug\Doctor Appointment.pdb
